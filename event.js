@@ -13,6 +13,13 @@ const events = [
     imageUrl: "Roborace.jpeg",
     RegLink: "#"
   },
+  {
+    eventName: "Robo-Soccer ",
+    prizeMoney: "10,000Rs ",
+    eventDate: "22nd April,2022",
+    imageUrl: "Roborace.jpeg",
+    RegLink: "#"
+  }
 
 
 ]
@@ -22,8 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
   for (let i = 0; i < events.length; i++) {
     output += `
     
-    <div class="w-full   shadow-2xl md:shadow-2xl   rounded-xl border-[var(--white)] border-opacity-10  mb-4 bg-[var(--black)]">
-    <div class="mb-10 overflow-hidden rounded-lg mx-10">
+    <div class="w-full shadow-2xl md:shadow-2xl   rounded-xl border-[var(--white)] border-opacity-10  mb-4 bg-[var(--black)]">
+    <div class=" overflow-hidden rounded-lg mx-10">
       <img
         src="./images/events/${events[i].imageUrl}"
         alt="image"
@@ -42,10 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
           ${events[i].eventDate}
           
         </h3>
-        <p class="text-body-color mb-7 text-base leading-relaxed">
-          Lorem ipsum dolor sit amet pretium consectetur adipiscing elit.
-          Lorem consectetur adipiscing elit.
-        </p>
+       
         <a
           href="${events[i].RegLink}"
           class="text-body-color hover:bg-[var(--blue)]  inline-block rounded-full border border-[var(--white)] py-2 px-7 text-base font-medium transition hover:text-white"
