@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper1', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -10,8 +10,7 @@ const swiper = new Swiper('.swiper', {
     // If we need pagination
     pagination: {
         el: '.swiper-pagination',
-        clickable: true,
-        dynamicBullets: true,
+        type: 'progressbar'
 
     },
 
@@ -25,4 +24,27 @@ const swiper = new Swiper('.swiper', {
     scrollbar: {
         el: '.swiper-scrollbar',
     },
+});
+let x;
+if (screen.width < 500) {
+    x = 4;
+} else if (screen.width > 500 && screen.width < 1024) {
+    x = 7;
+} else {
+    x = 5;
+}
+var swiper2 = new Swiper(".swiper2", {
+    slidesPerView: x,
+    grid: {
+        rows: 1
+    },
+    direction: "horizontal",
+    loop: true,
+    autoplay: {
+        delay: 0.0006,
+        disableOnInteraction: false
+    },
+    speed: 4000,
+
+    spaceBetween: 0
 });

@@ -19,6 +19,13 @@ const events = [
     eventDate: "22nd April,2022",
     imageUrl: "Roborace.jpeg",
     RegLink: "#"
+  },
+  {
+    eventName: "Robo-Soccer ",
+    prizeMoney: "10,000Rs ",
+    eventDate: "22nd April,2022",
+    imageUrl: "Roborace.jpeg",
+    RegLink: "#"
   }
 
 
